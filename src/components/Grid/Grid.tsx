@@ -19,7 +19,7 @@ export function Grid({ grid }: GridProps) {
             cell.agent === 'empty' ? (
               <S.EmptySpace key={`$cell_${cellIndex}-${rowIndex}`} />
             ) : (
-              <Player />
+              <Player key={`$player_${cellIndex}-${rowIndex}`} />
             )
           )}
         </S.GridRow>
